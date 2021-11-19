@@ -85,10 +85,10 @@ class OctoLightPlugin(
 		# Sets the light state depending on the inverted output setting (XOR)
 		if self.light_state ^ self._settings.get(["inverted_output"]):
 			#GPIO.output(int(self._settings.get(["light_pin"])), GPIO.HIGH)
-			os.system(uhubctl -a on -p 2)
+			os.system("uhubctl -a on -p 2")
 		else:
 			#GPIO.output(int(self._settings.get(["light_pin"])), GPIO.LOW)
-			os.system(uhubctl -a off -p 2)
+			os.system("uhubctl -a off -p 2")
 
 		self._logger.info("Got request. Light state: {}".format(
 			self.light_state
