@@ -1,5 +1,6 @@
 # OctoLight
-A simple plugin that adds a button to the navigation bar for toggleing a GPIO pin on the Raspberry Pi.
+A simple plugin that adds a button to the navigation bar for toggleing a USB port on the Raspberry Pi.
+The program is hard coded to toggle port number 2, so please put the device you wish to control on this port. 
 
 ![WebUI interface](img/screenshoot.png)
 
